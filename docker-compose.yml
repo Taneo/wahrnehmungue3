@@ -1,0 +1,14 @@
+version: '3.7'
+
+services: 
+    client:
+        container_name: wahrnehmung_shinra
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes: 
+            - '.:/app'
+            - '/app/node_modules'
+        ports: 
+            - 3001:3000
+        stdin_open: true
