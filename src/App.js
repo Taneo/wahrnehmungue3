@@ -10,6 +10,7 @@ function App() {
           <li className="App__navitem"><a href="#">Home</a></li>
           <li className="App__navitem"><a href="#">About</a></li>
           <li className="App__navitem"><a href="#">Project</a></li>
+          <li className="App__navitem"><a href="#">Blubb</a></li>
         </ul>
         <button className="App__button">Contact</button>
       </header>
