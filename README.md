@@ -11,21 +11,28 @@ This page is designed after 3 design laws and a harmonious choice of colors.
 
 # The npm way
 
+<pre>
 <code>
 git clone git@github.com:Taneo/wahrnehmungue3.git
+
 cd wahrnehmungue3
+
 npm install
+
 npm start
 </code>
-
+</pre>
 # The docker way
 
+<pre>
 <code>
 git clone git@github.com:Taneo/wahrnehmungue3.git
+
 cd wahrnehmungue3
+
 docker-compose up
 </code>
-
+</pre>
 ## Authors
     * Tobias Belkner - Inital Work - [GitHub](https://github.com/taneo)
     * Denny Schumann
