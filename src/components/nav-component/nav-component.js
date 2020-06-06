@@ -11,15 +11,14 @@ export default class NavComponent extends React.Component {
 
     }
 
-
     render() {
         return (
             <nav>
                 <p>{this.state.name}</p>
                 <ul>
-                    <li className="App__navitem"><a href="#">Home</a></li>
-                    <li className="App__navitem"><a href="#">About</a></li>
-                    <li className="App__navitem"><a href="#">Project</a></li>
+                    <li className="App__navitem"><a>Home</a></li>
+                    <li className="App__navitem"><a>About</a></li>
+                    <li className="App__navitem"><a>Project</a></li>
                 </ul>
                 <button className="App__button">Contact</button>
             </nav>

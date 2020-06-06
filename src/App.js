@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.scss';
-import NavComponent from './nav-component/nav-component.js'
+import NavComponent from './components/nav-component/nav-component.js'
+import AboutComponent from './components/about-component/about-component.js'
 
 function App() {
   return (
     <div className="App">
-        <NavComponent></NavComponent>
-      <body className="App-body">
-
-      </body>
+      <NavComponent></NavComponent>
+      <AboutComponent></AboutComponent>
     </div>
   );
 }
