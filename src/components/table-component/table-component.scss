@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+$background-header: #282c34;
+$background-body: #373c47;
+$text-color: #edf0f1;
+$button-color: #00aeda;
+$button-color-hover: #0085a7;
+
+.container {
+    display: inline-flex;
+    padding: 20px;
+    color: $text-color;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+table {
+    border: none;
+    th {
+        background-color: none;
+        padding: 15px;
+    }
+    .empty {
+        width: 2vw;
+    }
+    tr {
+        border: none;
+        td {
+            background-color: none;
+            padding: 15px;
+        }
+        .entry {
+            width: 5vw;
+        }
+        .checkField {
+            width: 1px;
+        }
+        &:hover {
+            background-color: $background-body;
+        }
+    }
+    .topHeader {
+        width: 200px;
+        border-bottom: 1px solid $button-color
+    }
+    .leftHeader {
+        border-right: 1px solid $button-color
+    }
+}

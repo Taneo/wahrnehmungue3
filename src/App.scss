@@ -10,14 +10,11 @@ $button-color-hover: #0085a7;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: $background-header;
 }
 
 .App {
   text-align: center;
+  background-color: $background-header;
+  height: 100vh;
 }
 
-
-.App-body {
-  min-height: 95vh;
-}

@@ -16,11 +16,11 @@ export default class NavComponent extends React.Component {
             <nav>
                 <p>{this.state.name}</p>
                 <ul>
-                    <li className="App__navitem"><a>Home</a></li>
-                    <li className="App__navitem"><a>About</a></li>
-                    <li className="App__navitem"><a>Project</a></li>
+                    <li className="App__navitem one"><a>Home</a></li>
+                    <li className="App__navitem two"><a>About</a></li>
+                    <li className="App__navitem three"><a>Project</a></li>
+                    <hr/>
                 </ul>
-                <button className="App__button">Contact</button>
             </nav>
         )
     }

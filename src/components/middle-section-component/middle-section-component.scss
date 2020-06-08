@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+$background-header: #1d1f25cc;
+$background-body: #373c47;
+$text-color: #e6eaeb;
+$button-color: #00aeda;
+$button-color-hover: #0085a7;
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.image-container {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    filter: saturate(50%);
+    filter: opacity(10%);
+}
+
+.content-container {
+    filter: opacity(100%);
+    display: inline-flex;
+    height: 50vh;
+    text-align: center;
+    vertical-align: middle;
+    width: 60vw;
+    padding-top: 15vh;
+}
+
+.left-side {
+    text-align: left;
+    width: 30vw;
+
+    p {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        
+        .head {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+
+        .more-button {
+            background-color: rgba($color: #000000, $alpha: .0);
+            border: 3px solid $button-color;
+            padding: 10px 20px;
+            outline: none;
+            transition: all 0.3s 0s;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: $button-color;
+            }
+        }
+    }
+}
+.right-side {
+    width: 20vw;
+    margin-left: 5vw;
+}
+

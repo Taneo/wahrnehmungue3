@@ -1,20 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-$background-header: #282c34;
+$background-header: #1d1f25cc;
 $background-body: #373c47;
-$text-color: #edf0f1;
+$text-color: #e6eaeb;
 $button-color: #00aeda;
 $button-color-hover: #0085a7;
 
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: $text-color;
+}
+
 nav {
-  background-color: $background-header;
+  position: relative;
+  z-index: 999;
   min-height: 5vh;
   display: flex;
-  padding: 0vh 20vh;
+  padding: 0vh 30vw;
   align-items: center;
   justify-content: space-between;
   font-size: 2rem;
-  color: white;
+  background-color: $background-header;
+  backdrop-filter: blur(5px);
 }
 
 li, a, button {
@@ -24,6 +33,7 @@ li, a, button {
   color: $text-color;
   text-decoration: none;
   list-style: none;
+  cursor: pointer;
 }
   
 .App__navitem {
@@ -31,24 +41,28 @@ li, a, button {
     padding: 0px 20px;
     
     a {
-      transition: all 0.3s ease 0s;
+      transition: all 0.3s 0s;
     
-      &:hover {
-        color: $button-color;
-      }
     }
 }
-  
-.App__button {
-    padding: 9px 25px;
-    background-color: $button-color;
-    border: none;
-    border-radius: 50px;
-    transition: all 0.3s ease 0s;
-    outline: none;
-    cursor: pointer;
 
-    &:hover {
-      background-color: $button-color-hover;
-    }
+hr {
+  height: 0.25rem;
+  width: 33%;
+  margin: 0;
+  background: $button-color;
+  border: none;
+  transition: all 0.3s 0s;
+}
+
+.one:hover ~ hr{
+  margin-left: 0%;
+}
+
+.two:hover ~ hr{
+  margin-left: 33%
+}
+
+.three:hover ~ hr{
+  margin-left: 66%
 }
