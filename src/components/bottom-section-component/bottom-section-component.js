@@ -6,7 +6,7 @@ export default class BottomSectionComponent extends React.Component {
         super(props)
 
         this.state = {
-            name: 'Shinra'
+            authors: 'Tobias Belkner & Denny Schumann'
         }
 
     }
@@ -16,8 +16,8 @@ export default class BottomSectionComponent extends React.Component {
             <React.Fragment>
                 <div className="footer">
                     <p>
-                        Von Tobias Belkner & Denny Schumann <br/>
-                        @Beuth-Hochschule für Technik Berlin<br/>
+                        Von {this.state.authors} <br />
+                        @Beuth-Hochschule für Technik Berlin<br />
                         Multimediale Informationsbearbeitung
                     </p>
                 </div>
