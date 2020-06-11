@@ -35,5 +35,5 @@ docker-compose up
 </code>
 </pre>
 ## Authors
-    * Tobias Belkner - Inital Work - [GitHub](https://github.com/taneo)
-    * Denny Schumann
+ Tobias Belkner - Inital Work - [GitHub](https://github.com/taneo)
+ Denny Schumann
